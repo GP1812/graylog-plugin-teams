@@ -60,4 +60,4 @@ jobs:
           asset_name: ${{ github.event.release.tag_name }}
           asset_content_type: application/java-archive
         env:
-          GITHUB_TOKEN: ${{ secrets.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  }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
