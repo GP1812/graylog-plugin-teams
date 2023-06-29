@@ -10,10 +10,10 @@ jobs:
     runs-on: LAPTOP-DQMCHGOA
 
     steps:
-      - name: Set up JDK 8
+      - name: Set up JDK 20
         uses: actions/setup-java@v2
         with:
-          java-version: 8
+          java-version: 20
           distribution: adopt
 
       - name: Install libxml2-utils and rpm
@@ -27,8 +27,8 @@ jobs:
       - name: Set up Maven
         uses: actions/setup-java@v2
         with:
-          java-version: 8
-          maven-version: 3.6.3
+          java-version: 20
+          maven-version: 3.9.3
 
       - name: Generate Graylog resources
         run: |
